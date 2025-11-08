@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitget Clone - Crypto Exchange</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="user-info">
+                <span class="uid"># BGUSER-OSC52LFE</span>
+                <span class="verified">Verified <i class="fas fa-check-circle"></i></span>
+            </div>
+            <div class="header-actions">
+                <button class="btn-notification"><i class="fas fa-bell"></i></button>
+                <button class="btn-scan"><i class="fas fa-qrcode"></i></button>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="nav-item active" data-tab="home">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </div>
+            <div class="nav-item" data-tab="markets">
+                <i class="fas fa-chart-line"></i>
+                <span>Markets</span>
+            </div>
+            <div class="nav-item" data-tab="trade">
+                <i class="fas fa-exchange-alt"></i>
+                <span>Trade</span>
+            </div>
+            <div class="nav-item" data-tab="futures">
+                <i class="fas fa-chart-bar"></i>
+                <span>Futures</span>
+            </div>
+            <div class="nav-item" data-tab="assets">
+                <i class="fas fa-wallet"></i>
+                <span>Assets</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Tab -->
+        <div id="home" class="tab-content active">
+            <div class="quick-access">
+                <h3>Quick Access</h3>
+                <div class="quick-grid">
+                    <div class="quick-item">
+                        <i class="fas fa-gift"></i>
+                        <span>Rewards</span>
+                    </div>
+                    <div class="quick-item">
+                        <i class="fas fa-users"></i>
+                        <span>Referral</span>
+                    </div>
+                    <div class="quick-item">
+                        <i class="fas fa-coins"></i>
+                        <span>Earn</span>
+                    </div>
+                    <div class="quick-item">
+                        <i class="fas fa-robot"></i>
+                        <span>Bots</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="promo-section">
+                <div class="promo-card">
+                    <h4>Your Next VIP Level Bonus Awaits</h4>
+                    <p>Level Up Your VIP level. Grab up to 200 USDT</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 37.5%"></div>
+                    </div>
+                    <span class="progress-text">3/8</span>
+                    <button class="btn-view">View more →</button>
+                </div>
+
+                <div class="promo-card candy">
+                    <h4>CandyBomb</h4>
+                    <p>Grab a share of 2.7M UAI</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 12.5%"></div>
+                    </div>
+                    <span class="progress-text">1/8</span>
+                </div>
+            </div>
+
+            <div class="favorites-section">
+                <h4>Favorites</h4>
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-fav-tab="spot">Spot</button>
+                    <button class="tab-btn" data-fav-tab="futures">Futures</button>
+                    <button class="tab-btn" data-fav-tab="onchain">Onchain</button>
+                </div>
+                
+                <div class="favorites-list">
+                    <div class="fav-item">
+                        <div class="coin-info">
+                            <span class="coin-pair">AIAUSDT</span>
+                            <span class="coin-price">5.10697</span>
+                        </div>
+                        <div class="coin-change positive">+2.34%</div>
+                    </div>
+                    <div class="fav-item">
+                        <div class="coin-info">
+                            <span class="coin-pair">ZECUSDT</span>
+                            <span class="coin-price">577.05</span>
+                        </div>
+                        <div class="coin-change negative">-1.25%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popular-section">
+                <h3>Popular</h3>
+                <div class="popular-grid">
+                    <div class="popular-item">Share 10,000 BGB</div>
+                    <div class="popular-item">GetAgent</div>
+                    <div class="popular-item">Stock futures</div>
+                    <div class="popular-item">Onchain airdrops</div>
+                    <div class="popular-item">Futures Leaderboard</div>
+                    <div class="popular-item">Trading Club</div>
+                    <div class="popular-item">Bitget Live</div>
+                    <div class="popular-item">HodlerYield</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Markets Tab -->
+        <div id="markets" class="tab-content">
+            <div class="markets-header">
+                <h2>Markets</h2>
+                <div class="market-tabs">
+                    <button class="market-tab active" data-market="futures">Futures</button>
+                    <button class="market-tab" data-market="spot">Spot</button>
+                    <button class="market-tab" data-market="onchain">Onchain</button>
+                </div>
+            </div>
+
+            <div class="stocks-section">
+                <h3>Stock Tokens</h3>
+                <div class="stocks-list">
+                    <div class="stock-item">
+                        <div class="stock-info">
+                            <span class="stock-symbol">TSLAUSDT</span>
+                            <span class="stock-name">Tesla, Inc.</span>
+                        </div>
+                        <div class="stock-details">
+                            <span class="leverage">25x</span>
+                            <span class="price">432.58</span>
+                            <span class="change positive">+0.67%</span>
+                        </div>
+                    </div>
+                    <div class="stock-item">
+                        <div class="stock-info">
+                            <span class="stock-symbol">AAPLUSDT</span>
+                            <span class="stock-name">Apple Inc.</span>
+                        </div>
+                        <div class="stock-details">
+                            <span class="leverage">25x</span>
+                            <span class="price">269.00</span>
+                            <span class="change positive">+0.16%</span>
+                        </div>
+                    </div>
+                    <div class="stock-item">
+                        <div class="stock-info">
+                            <span class="stock-symbol">NVDAUSDT</span>
+                            <span class="stock-name">Nvidia Corporation</span>
+                        </div>
+                        <div class="stock-details">
+                            <span class="leverage">25x</span>
+                            <span class="price">190.30</span>
+                            <span class="change positive">+1.22%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trade Tab -->
+        <div id="trade" class="tab-content">
+            <div class="trade-header">
+                <h2>Spot Trading</h2>
+                <div class="trade-pair">
+                    <span class="pair">NPC/USDT</span>
+                    <span class="change negative">-15.32%</span>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <div id="tradingview_chart"></div>
+            </div>
+
+            <div class="order-book">
+                <div class="order-side">
+                    <h4>Buy Orders</h4>
+                    <div class="order-list">
+                        <div class="order-row">
+                            <span class="price">0.01398</span>
+                            <span class="quantity">262.98</span>
+                            <div class="depth-bar" style="width: 66%; background: #0ecb81;"></div>
+                        </div>
+                        <div class="order-row">
+                            <span class="price">0.01397</span>
+                            <span class="quantity">1.42K</span>
+                            <div class="depth-bar" style="width: 45%; background: #0ecb81;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-side">
+                    <h4>Sell Orders</h4>
+                    <div class="order-list">
+                        <div class="order-row">
+                            <span class="price">0.01392</span>
+                            <span class="quantity">140</span>
+                            <div class="depth-bar" style="width: 34%; background: #f6465d;"></div>
+                        </div>
+                        <div class="order-row">
+                            <span class="price">0.01389</span>
+                            <span class="quantity">1.1</span>
+                            <div class="depth-bar" style="width: 25%; background: #f6465d;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trade-panel">
+                <div class="trade-type">
+                    <button class="type-btn active">Limit</button>
+                    <button class="type-btn">Market</button>
+                    <button class="type-btn">Stop</button>
+                </div>
+
+                <div class="buy-section">
+                    <h4>Buy NPC</h4>
+                    <div class="input-group">
+                        <label>Price (USDT)</label>
+                        <input type="number" value="0.01393" class="price-input">
+                    </div>
+                    <div class="input-group">
+                        <label>Quantity (NPC)</label>
+                        <input type="number" value="0" class="quantity-input">
+                    </div>
+                    <div class="order-value">
+                        <span>Order value: ≈$0.01 USDT</span>
+                    </div>
+                    <div class="balance">
+                        <span>Available: 0.00 USDT</span>
+                    </div>
+                    <button class="btn-buy">Buy NPC</button>
+                </div>
+
+                <div class="sell-section">
+                    <h4>Sell NPC</h4>
+                    <div class="input-group">
+                        <label>Price (USDT)</label>
+                        <input type="number" value="0.01393" class="price-input">
+                    </div>
+                    <div class="input-group">
+                        <label>Quantity (NPC)</label>
+                        <input type="number" value="0" class="quantity-input">
+                    </div>
+                    <div class="order-value">
+                        <span>Order value: ≈$0.00 USDT</span>
+                    </div>
+                    <div class="balance">
+                        <span>Available: 0.00 NPC</span>
+                    </div>
+                    <button class="btn-sell">Sell NPC</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assets Tab -->
+        <div id="assets" class="tab-content">
+            <div class="assets-header">
+                <h2>Assets Overview</h2>
+                <div class="asset-tabs">
+                    <button class="asset-tab active" data-asset="overview">Overview</button>
+                    <button class="asset-tab" data-asset="spot">Spot</button>
+                    <button class="asset-tab" data-asset="futures">Futures</button>
+                </div>
+            </div>
+
+            <div class="total-assets">
+                <div class="total-value">
+                    <h3>Total Assets</h3>
+                    <div class="amount">0.00 USDT</div>
+                    <div class="usd-value">≈ 0.00 USD</div>
+                </div>
+                <div class="today-pnl">
+                    <span>Today's PnL</span>
+                    <span class="pnl-value">0.00 USD</span>
+                </div>
+            </div>
+
+            <div class="wallet-breakdown">
+                <div class="wallet-item">
+                    <span>Wallet Balance</span>
+                    <span>0.00 USDT</span>
+                </div>
+                <div class="wallet-item">
+                    <span>Unrealized PnL</span>
+                    <span>0.00 USDT</span>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="action-btn" id="deposit-btn">
+                    <i class="fas fa-arrow-down"></i>
+                    <span>Deposit</span>
+                </button>
+                <button class="action-btn" id="withdraw-btn">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>Withdraw</span>
+                </button>
+                <button class="action-btn">
+                    <i class="fas fa-exchange-alt"></i>
+                    <span>Transfer</span>
+                </button>
+            </div>
+
+            <div class="assets-list">
+                <h4>Your Assets</h4>
+                <div class="no-assets">
+                    <p>You have no assets in your account</p>
+                    <p>Make a deposit of any amount to get 10 points</p>
+                    <button class="btn-deposit">Deposit Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Futures Tab -->
+        <div id="futures" class="tab-content">
+            <div class="futures-header">
+                <h2>Futures Trading</h2>
+                <div class="futures-tabs">
+                    <button class="futures-tab active">USDT-M</button>
+                    <button class="futures-tab">Coin-M</button>
+                    <button class="futures-tab">USDC-M</button>
+                </div>
+            </div>
+
+            <div class="futures-balance">
+                <div class="balance-card">
+                    <h4>Total Assets</h4>
+                    <div class="amount">0.00 USDT</div>
+                    <div class="usd-value">≈ 0.00 USD</div>
+                </div>
+                <div class="pnl-card">
+                    <span>Today's PnL</span>
+                    <span class="pnl-value">0.00 USD</span>
+                </div>
+            </div>
+
+            <div class="futures-wallet">
+                <div class="wallet-item">
+                    <span>Wallet Balance</span>
+                    <span>0.00 USDT</span>
+                </div>
+                <div class="wallet-item">
+                    <span>Unrealized PnL</span>
+                    <span>0.00 USDT</span>
+                </div>
+            </div>
+
+            <div class="futures-pairs">
+                <h4>Popular Futures</h4>
+                <div class="futures-list">
+                    <div class="futures-item">
+                        <div class="pair-info">
+                            <span class="pair">BTCUSDT</span>
+                            <span class="leverage">125x</span>
+                        </div>
+                        <div class="price-info">
+                            <span class="price">67,892.34</span>
+                            <span class="change positive">+2.34%</span>
+                        </div>
+                    </div>
+                    <div class="futures-item">
+                        <div class="pair-info">
+                            <span class="pair">ETHUSDT</span>
+                            <span class="leverage">100x</span>
+                        </div>
+                        <div class="price-info">
+                            <span class="price">3,456.78</span>
+                            <span class="change positive">+1.89%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Deposit Modal -->
+    <div id="deposit-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Deposit Crypto</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="coin-selection">
+                    <h4>Select Coin</h4>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search coin..." id="coin-search">
+                    </div>
+                    <div class="coin-list">
+                        <div class="coin-option" data-coin="USDT">
+                            <span>USDT (Tether)</span>
+                            <span>Ethereum, BSC, TRON</span>
+                        </div>
+                        <div class="coin-option" data-coin="BTC">
+                            <span>BTC (Bitcoin)</span>
+                            <span>Bitcoin Network</span>
+                        </div>
+                        <div class="coin-option" data-coin="ETH">
+                            <span>ETH (Ethereum)</span>
+                            <span>Ethereum Network</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="deposit-address">
+                    <h4>Deposit Address</h4>
+                    <div class="address-box">
+                        <span id="wallet-address">0x742d35Cc6634C0532925a3b8D...</span>
+                        <button class="btn-copy"><i class="fas fa-copy"></i></button>
+                    </div>
+                    <div class="qr-code">
+                        <div class="qr-placeholder">
+                            <i class="fas fa-qrcode"></i>
+                            <span>QR Code</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-deposit">
+                    <h4>Demo Deposit (For Testing)</h4>
+                    <div class="demo-amounts">
+                        <button class="demo-amt" data-amount="100">100 USDT</button>
+                        <button class="demo-amt" data-amount="500">500 USDT</button>
+                        <button class="demo-amt" data-amount="1000">1000 USDT</button>
+                        <button class="demo-amt" data-amount="5000">5000 USDT</button>
+                    </div>
+                    <div class="custom-amount">
+                        <input type="number" placeholder="Custom amount" id="custom-amount">
+                        <button id="add-custom">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Withdraw Modal -->
+    <div id="withdraw-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Withdraw Crypto</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="withdraw-form">
+                    <div class="input-group">
+                        <label>Coin</label>
+                        <select id="withdraw-coin">
+                            <option value="USDT">USDT</option>
+                            <option value="BTC">BTC</option>
+                            <option value="ETH">ETH</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Withdraw Address</label>
+                        <input type="text" placeholder="Enter wallet address" id="withdraw-address">
+                    </div>
+                    <div class="input-group">
+                        <label>Amount</label>
+                        <input type="number" placeholder="0.00" id="withdraw-amount">
+                    </div>
+                    <div class="balance-info">
+                        <span>Available: <span id="available-balance">0.00 USDT</span></span>
+                    </div>
+                    <button class="btn-withdraw" id="confirm-withdraw">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
